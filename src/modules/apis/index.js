@@ -2,7 +2,7 @@ import axios from 'axios';
 export default axios.create({
     baseURL: 'http://localhost:4000'
 })
-// axios.defaults.baseURL = 'http://localhost:4000'
+axios.defaults.baseURL = 'http://localhost:4000'
 
 export const getUsersAPI = async () => axios.get('/users')
 export const getUserByIdAPI = async (id) => axios.get(`/users/${id}`)

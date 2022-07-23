@@ -32,7 +32,7 @@ export default function Mytable() {
       <Table aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell>Name</TableCell>
+            <TableCell>UserID</TableCell>
             <TableCell align="right">Email</TableCell>
             <TableCell align="right">Password</TableCell>
             <TableCell align="right">Mobile</TableCell>
@@ -47,10 +47,10 @@ export default function Mytable() {
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell component="th" scope="row">
-                {row.name}
+                {row.user}
               </TableCell>
               <TableCell align="right">{row.email}</TableCell>
-              <TableCell align="right">{row.password}</TableCell>
+              <TableCell align="right">{row.pwd}</TableCell>
               <TableCell align="right">{row.mobile}</TableCell>
             {/*  <TableCell align="right">
                 <Button onClick={()=>dispatch(setUserSlice(row))} fullWidth variant="contained" >수정</Button>
