@@ -3,7 +3,7 @@ import { faCheck, faTimes, faInfoCircle } from "@fortawesome/free-solid-svg-icon
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from 'modules/apis';
 import styles from 'styles/join.module.css'
-import { useDispatch, useSelector } from "react-redux";
+import Link from "next/link";
 
 const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[~!@#$%]).{8,24}$/;
@@ -12,8 +12,6 @@ const MOBILE_REGEX = /^01(?:0|1|[6-9])(?:\d{3}|\d{4})\d{4}$/  //숫자만 입력
 const REGISTER_URL = '/users';
 
 const Join = () => {
-    const dispatch = useDispatch();
-    const userList = useSelector(state => state.users)
     const userRef = useRef();
     const errRef = useRef();
 
@@ -45,7 +43,6 @@ const Join = () => {
     }, [])
 
     useEffect(() => {
-        
         setValidName(USER_REGEX.test(user));
     }, [user])
 
@@ -170,7 +167,6 @@ const Join = () => {
                             특수문자는 ~!@@#$% 만 사용 가능 합니다.
                         </p>
 
-
                         <label htmlFor="confirm_pwd">
                             Confirm Password:
                             <FontAwesomeIcon icon={faCheck} className={validMatch && matchPwd ? "valid" : "hide"} />
@@ -235,8 +231,7 @@ const Join = () => {
                     <p>
                         이미 ID가 있으시면?<br />
                         <span className="line">
-                            {/*put router link here*/}
-                            <a href="#">Login</a>
+                            <Link href="/users/login">Login</Link>
                         </span>
                     </p>
                 </section>

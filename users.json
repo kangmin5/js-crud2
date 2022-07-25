@@ -1,4 +1,36 @@
 {
+  "auth": [
+    {
+      "user": "test1",
+      "pwd": "1111",
+      "id": 1
+    },
+    {
+      "user": "test1",
+      "pwd": "1111",
+      "id": 2
+    },
+    {
+      "user": "test1",
+      "pwd": "1111",
+      "id": 3
+    },
+    {
+      "user": "test3",
+      "pwd": "1111",
+      "id": 4
+    },
+    {
+      "user": "eew",
+      "pwd": "",
+      "id": 5
+    },
+    {
+      "user": "dsfas",
+      "pwd": "asdfad",
+      "id": 6
+    }
+  ],
   "users": [
     {
       "id": "mpej1mya",

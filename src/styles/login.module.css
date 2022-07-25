@@ -1,0 +1,18 @@
+.container{
+    /* background-color: dodgerblue; */
+    display: flex;
+    min-height:75vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0.5rem;
+
+}
+
+
+
+
+
+
+
+
