@@ -1,5 +1,5 @@
 import { Button } from '@mui/material'
-import { logoutSlice, selectUser } from 'modules/slices';
+import { logoutSlice, selectUser } from 'modules/services';
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 

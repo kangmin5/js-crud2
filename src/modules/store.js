@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { createWrapper } from 'next-redux-wrapper'
 import createSagaMiddleware from '@redux-saga/core'
-import user from "./slices/userSlice";
-import users from "./slices/usersSlice";
+import user from "./services/userSlice";
+import users from "./services/usersSlice";
 import rootSaga from "./sagas"
 
 const sagaMiddleware = createSagaMiddleware()

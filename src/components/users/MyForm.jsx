@@ -2,7 +2,7 @@ import { Button, Container, Input } from "@mui/material";
 import { nanoid } from "@reduxjs/toolkit";
 import { CREATE_USER, UPDATE_USER_BY_ID } from "modules/types";
 import { useDispatch, useSelector } from "react-redux";
-import { setUserSlice } from "../../modules/slices/userSlice";
+import { setUserSlice } from "../../modules/services/userSlice";
 import styles from 'styles/user.module.css'
 
 const MyForm = () => {

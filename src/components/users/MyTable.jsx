@@ -8,7 +8,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { useDispatch, useSelector } from 'react-redux';
 import { Button } from '@mui/material';
-import { setUserSlice, user } from 'modules/slices';
+import { setUserSlice, user } from 'modules/services';
 // import { deleteUsersSlice } from 'modules/slices/usersSlice';
 import { DELETE_USER_BY_ID, GET_USERS } from 'modules/types';
 import styles from 'styles/user.module.css'
